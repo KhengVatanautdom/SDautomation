@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+
+<head>
+
+
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>SD Automation Training and Service</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+    .text {
+        background-color: aliceblue;
+        background: cover;
+        margin-right: 100px;
+        padding: 20px;
+        width: 100%;
+       
+    }
+    .text hr {
+        font-size: large;
+        color: black;
+    }
+    .text h1{
+        font-size: 50px;
+        color: brown;
+        
+    }
+    .text span{
+        font-weight: bold;
+        font-size: 25px;
+
+    }
+    .text p{
+        font-size: 25px;
+    }
+
+    .text a {
+        text-decoration: none;
+        color: brown;
+        
+    }
+    .slider {
+        position: relative;
+        text-align: center;
+        
+        margin-top: 200px;
+        overflow: hidden;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    img {
+        width: 400px;
+        height: 600px;
+    }
+    
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
+    .next {
+        right: 0;
+    }
+    
+    .slide.active {
+        display: block;
+    }
+    
+</style>
+<body class="main-container">
+
+    <header>
+        <h2 class="logo">
+            <a href="/index.html">
+                <img src="/SD.png" alt="SD Automation Logo"> <!-- Logo Image -->
+                 <!-- Text -->
+            </a>
+        </h2>
+        <nav class="navigation">
+            <a href="/index.html">Home</a>
+            <a href="/training.html">Training</a>
+            <a href="/service.html">Services</a>
+            <a href="/product.html">Products</a>
+            <a href="/download.html">Downloads</a>
+            <a href="/contact.html">Contacts</a>
+          
+
+        </nav>
+        
+      
+        
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="https://s.alicdn.com/@sc04/kf/H7e4e0ccb9dc0453f9787f2cbd453cc247.jpg_720x720q50.jpg" alt="Image 1">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="https://s.alicdn.com/@sc04/kf/H91c237be9b5a462a822800c70bdcc23dO.jpg_720x720q50.jpg" alt="Image 2">
+                </div>
+
+                <div class="slide">
+                    <img src="https://s.alicdn.com/@sc04/kf/H8d9001107acc410c9edf0062c17f6308d.jpg_720x720q50.jpg" alt="Image 2">
+                </div>
+
+                <div class="slide">
+                    <img src="https://s.alicdn.com/@sc04/kf/H026ee31d92da49c0b02a3429399b18957.jpg_720x720q50.jpg" alt="Image 2">
+                </div>
+
+                <div class="slide">
+                    <img src="https://s.alicdn.com/@sc04/kf/H56a3b11b979a46d78a356a2187dd875dY.jpg_720x720q50.jpg" alt="Image 2">
+                </div>
+                
+
+
+            </div>
+            <!-- Navigation arrows -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <script>
+                let currentSlideIndex = 0;
+                const slides = document.querySelectorAll('.slide');
+            
+                function showSlide(index) {
+                    slides.forEach((slide, i) => {
+                        slide.classList.remove('active');
+                        if (i === index) {
+                            slide.classList.add('active');
+                        }
+                    });
+                }
+            
+                function nextSlide() {
+                    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+                    showSlide(currentSlideIndex);
+                }
+            
+                function prevSlide() {
+                    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+                    showSlide(currentSlideIndex);
+                }
+            
+                // Initialize the first slide
+                showSlide(currentSlideIndex);
+            </script>
+            
+        </section>
+        <br>
+        <br>
+        
+
+        <div class="text">
+            <h1> KUKA KPS-600 robot power supply 00-134-525 kps 600-20 KUKA Robot Servo Drive Power Supply Module </h1>
+            <p>
+                <hr/>
+               
+                <span>Place of Origin:</span> Germany<br>
+                <span>Brand Name: </span>        	KUKA<br>
+                <span>Model Number: </span> 	00-134-525<br>
+                <span>Product name: </span> KUKA power supply 00-134-525<br>
+                <span>Warranty: </span> 3-12 Months<br>
+                <span>Condition: </span> 100% Original<br>
+                <span>Quality: </span> 100% Strictly Tested<br>
+                <hr/>
+            </p>
+            
+            <P>For Purchase and More information:<a href="https://t.me/SDautomation" target="_blank">Telegram</a></P>
+        </div>
+        
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- SD Automation Training and Service Section -->
+                <div>
+                    <h2>SD Automation Training and Service</h2>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/training.html">Training</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/product.html">Products</a></li>
+                        <li><a href="/download.html">Downloads</a></li>
+                        <li><a href="/contact.html">About Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contacts Section -->
+                <div>
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ElectricalsTechnology/about" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/@sdautomation28" target="_blank">YouTube</a></li>
+                        <li><a href="https://t.me/SDautomation" target="_blank">Telegram</a></li>
+                        <li><a href="mailto:sd.automationservice@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+    
+
+                <!-- Legal Section -->
+                <div>
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Licensing</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location Section -->
+                <div>
+                    <h2>Location</h2>
+                    <p><a href="https://maps.app.goo.gl/MrjzXnnFifp8223x8">Chhoukvar I, Phnom Penh, Cambodia</a></p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="footer-divider">
+
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <p>© 2024 SD Automation™. All Rights Reserved.</p>
+                <div class="footer-socials">
+                    <!-- Icons: Add SVG icons for social links (omitted here for brevity) -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    
+      
+    
+    
+    
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+</html>
